@@ -29,10 +29,12 @@ ul.topnav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #bfbfbf;
+  background-color: #a6a6a6;
 }
 
 ul.topnav li {float: left;}
+
+
 
 ul.topnav li a {
   display: inline-block;
@@ -42,10 +44,9 @@ ul.topnav li a {
   text-decoration: none;
   transition: 0.3s;
   font-size: 17px;
-
 }
 
-ul.topnav li a:hover {background-color: #ff3333;}
+ul.topnav li a:hover {background-color: #bfbfbf;}
 
 ul.topnav li.icon {display: none;}
 
@@ -73,7 +74,9 @@ ul.topnav li.icon {display: none;}
     text-align: left;
   }
 }
-img {background: cover}
+img {
+  background: cover;
+}
 
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
