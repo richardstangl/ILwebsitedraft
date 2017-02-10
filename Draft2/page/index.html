@@ -35,16 +35,24 @@
 <div class="content"></div>
 
 <ul class="topnav" id="myTopnav">
-  <li><a href="#navicon"><img src="assets/images/infolinknav.png"></a></li>
+  <li class="active"><a href="#navicon"><img src="assets/images/infolinknav.png"></a></li>
   <li><a href="#navservices"><img src="assets/images/servicesnav.png"></a></li>
-  <!-- <li><a href="#services">Services</a></li>
-  <li><a href="#about">About Us</a></li> -->
   <li><a href="#navaboutus"><img src="assets/images/aboutusnav.png"></a></li>
-  <!-- <li><a href="#contact">Contact</a></li> -->
   <li><a href="#navcontact"><img src="assets/images/contactnav.png"></a></li>
   <li><a href=#navwebmail><img src="assets/images/webmailnav.png"></a></li>
   <li class="icon">
-    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()"
+    class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="true">☰
+    </a>
+    <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
   </li>
 
 
