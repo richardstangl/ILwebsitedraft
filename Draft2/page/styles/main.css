@@ -113,10 +113,11 @@ img {
   margin: 0 auto;
 }
 
+
 .child {
   font-size:16px;
   display:inline-block;
-  width:calc(33% - 2px);
+  width:33%;
   /*border:1px solid black;*/
   vertical-align: top;
 }
@@ -129,7 +130,7 @@ img {
 
 .contacttitle {
   font-weight: bold;
-  /*text-align: center;*/
+
 }
 
 .contacttext {
