@@ -8,33 +8,31 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="scripts/main.js"></script>
-  <link rel="import" href="/templates/nav.html">
-  <link rel="import" href="/templates/footer.html">
-
-
+  <link rel="import" href="/templates/elements.html">
 </head>
-<body>
 
+<body>
   <script>
   var link = document.querySelector('link[rel=import]');
   var content = link.import.querySelector('#navbar');
   document.body.appendChild(document.importNode(content, true));
   </script>
+
   <br>
   <br>
   <br>
 
   <div class="parent" id="contactinfo">
-
     <div class="child" id="phone">
       <h3 class="contacttitle">Call Us:<br></h3>
       <h4 class="contacttext">New Service:<br></h4>
-      <h4 class="contacttext"><a href="tel:+18664594735">1-866-459-4735</a><br></h4>
+      <h4 class="contacttext"><a href="tel:+18664594735" style="color:#ff3333">1-866-459-4735</a><br></h4>
       <br>
       <h4 class="contacttext">Technical Support:<br></h4>
-      <h4 class="contacttext"><a href="tel:+18882428616">1-888-242-8616</a><br></h4>
+      <h4 class="contacttext"><a href="tel:+18882428616" style="color:#ff3333">1-888-242-8616</a><br></h4>
       <br>
     </div>
+
     <div class="child" id="officelocation">
       <h3 class="contacttitle">Visit Us:<br></h3>
       <h4 class="contacttext">514 Atlantic Ave.<br></h4>
@@ -44,23 +42,22 @@
       <h4 class="contacttext">Mon - Fri 9am to 5pm<br></h4>
       <br>
     </div>
+
     <div class="child" id="email">
       <h3 class="contacttitle">Email Us:<br></h3>
       <h4 class="contacttext">Tech Support:<br></h4>
-      <h4 class="contacttext"><a href="mailto:help@info-link.net">help@info-link.net</a><br></h4>
+      <h4 class="contacttext"><a href="mailto:help@info-link.net" style="color:#ff3333">help@info-link.net</a><br></h4>
       <br>
       <h4 class="contacttext">General Questions:<br></h4>
-      <h4 class="contacttext"><a href="mailto:info@info-link.net">info@info-link.net</a><br></h4>
+      <h4 class="contacttext"><a href="mailto:info@info-link.net" style="color:#ff3333">info@info-link.net</a><br></h4>
       <br>
     </div>
   </div>
 
-
-    <div class="footer">
-    <a href="index.html" style="color:#ffffff">Info-Link.net</a> |
-      <a href="tel:+18664594735" style="color:#ffffff">1-866-459-4735</a> |
-      <a href="mailto:info@info-link.net" style="color:#ffffff">info@info-link.net</a> |
-      © 2017 Info Link Inc.
-  </div>
+  <script>
+  var link = document.querySelector('link[rel=import]');
+  var content = link.import.querySelector('#footer');
+  document.body.appendChild(document.importNode(content, true));
+  </script>
 
 </body>
