@@ -14,15 +14,47 @@
 <body>
 
   <script>
-      var link = document.querySelector('link[rel=import]');
-      var content = link.import.querySelector('#navbar');
-      document.body.appendChild(document.importNode(content, true));
-    </script>
+  var link = document.querySelector('link[rel=import]');
+  var content = link.import.querySelector('#navbar');
+  document.body.appendChild(document.importNode(content, true));
+  </script>
+  <br>
+  <br>
 
 
-    <script>
-    var link = document.querySelector('link[rel=import]');
-    var content = link.import.querySelector('#footer');
-    document.body.appendChild(document.importNode(content, true));
-    </script>
-</body>
+  <div class="about">
+    <h3><b>Serving the upper midwest since 1994</b></h3>
+    <br>
+
+
+    <div class="verticalLine">
+      <div class="abouttext">
+        <p>Info-Link has been serving west-central Minnesota since 1994. We offer
+
+          <a href="services.html" style="color:#ff3333">Internet</a>
+
+          plans to communities in west-central Minnesota and eastern South Dakota.
+
+          You may wish to <a href="contact.html" style="color:#ff3333">contact
+
+            us</a> to see if we currently have any promotions or special deals. </p>
+
+            <p>We have local, free-of-charge support lines for assisting you with getting
+
+              connected, resolving modem problems, or just answering questions about
+
+              email and the use of your browser.  You can also send us your support requests
+
+              via our <a href="http://www.info-link.net:80/page.php?section=support&content=support_request" style="color:#ff3333">on-line support form</a>.</p>
+            </div>
+          </div>
+        </div>
+<!-- <div class="globeimage">
+  <img src="assets/images/globelogo.jpg">
+</div> -->
+        <script>
+        var link = document.querySelector('link[rel=import]');
+        var content = link.import.querySelector('#footer');
+        document.body.appendChild(document.importNode(content, true));
+        </script>
+      </body>
