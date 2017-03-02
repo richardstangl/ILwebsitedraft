@@ -11,53 +11,73 @@
   <link rel="import" href="/templates/elements.html">
 </head>
 
-<body>
-  <script>
-  var link = document.querySelector('link[rel=import]');
-  var content = link.import.querySelector('#navbar');
-  document.body.appendChild(document.importNode(content, true));
-  </script>
+<body background="globelogo50.jpg" style="background-repeat: no-repeat;">
 
-  <br>
-  <br>
-  <br>
 
-  <div class="parent" id="contactinfo">
-    <div class="child" id="phone">
-      <h3 class="contacttitle">Call Us:<br></h3>
-      <h4 class="contacttext">New Service:<br></h4>
-      <h4 class="contacttext"><a href="tel:+18664594735" style="color:#ff3333">1-866-459-4735</a><br></h4>
-      <br>
-      <h4 class="contacttext">Technical Support:<br></h4>
-      <h4 class="contacttext"><a href="tel:+18882428616" style="color:#ff3333">1-888-242-8616</a><br></h4>
-      <br>
+    <script>
+    var link = document.querySelector('link[rel=import]');
+    var content = link.import.querySelector('#navbar');
+    document.body.appendChild(document.importNode(content, true));
+    </script>
+
+
+
+    <br>
+    <br>
+    <br>
+
+    <div class="parent" id="contactinfo">
+
+      <div class="child" id="phone">
+
+        <h3 class="contacttitle">Call Us:<br></h3>
+        <div class="verticalLine">
+          <h4 class="contacttext">New Service:<br></h4>
+          <h4 class="contacttext"><a href="tel:+18664594735" style="color:#ff3333">1-866-459-4735</a><br></h4>
+          <br>
+          <h4 class="contacttext">Technical Support:<br></h4>
+          <h4 class="contacttext"><a href="tel:+18882428616" style="color:#ff3333">1-888-242-8616</a><br></h4>
+        </div>
+        <br>
+
+      </div>
+
+      <div class="child" id="officelocation">
+
+        <h3 class="contacttitle">Visit Us:<br></h3>
+        <div class="verticalLine">
+          <h4 class="contacttext">514 Atlantic Ave.<br></h4>
+          <h4 class="contacttext">P.O. Box 149<br></h4>
+          <h4 class="contacttext">Morris, MN 56267<br></h4>
+        </div>
+
+        <h3 class="contacttitle">Hours:<br></h3>
+        <div class="verticalLine">
+          <h4 class="contacttext">Mon - Fri 9am to 5pm<br></h4>
+        </div>
+        <br>
+
+      </div>
+
+      <div class="child" id="email">
+
+        <h3 class="contacttitle">Email Us:<br></h3>
+        <div class="verticalLine">
+          <h4 class="contacttext">Tech Support:<br></h4>
+          <h4 class="contacttext"><a href="mailto:help@info-link.net" style="color:#ff3333">help@info-link.net</a><br></h4>
+          <br>
+          <h4 class="contacttext">General Questions:<br></h4>
+          <h4 class="contacttext"><a href="mailto:info@info-link.net" style="color:#ff3333">info@info-link.net</a><br></h4>
+        </div>
+        <br>
+
+      </div>
     </div>
 
-    <div class="child" id="officelocation">
-      <h3 class="contacttitle">Visit Us:<br></h3>
-      <h4 class="contacttext">514 Atlantic Ave.<br></h4>
-      <h4 class="contacttext">P.O. Box 149<br></h4>
-      <h4 class="contacttext">Morris, MN 56267<br></h4>
-      <h3 class="contacttitle">Hours:<br></h3>
-      <h4 class="contacttext">Mon - Fri 9am to 5pm<br></h4>
-      <br>
-    </div>
-
-    <div class="child" id="email">
-      <h3 class="contacttitle">Email Us:<br></h3>
-      <h4 class="contacttext">Tech Support:<br></h4>
-      <h4 class="contacttext"><a href="mailto:help@info-link.net" style="color:#ff3333">help@info-link.net</a><br></h4>
-      <br>
-      <h4 class="contacttext">General Questions:<br></h4>
-      <h4 class="contacttext"><a href="mailto:info@info-link.net" style="color:#ff3333">info@info-link.net</a><br></h4>
-      <br>
-    </div>
+    <script>
+    var link = document.querySelector('link[rel=import]');
+    var content = link.import.querySelector('#footer');
+    document.body.appendChild(document.importNode(content, true));
+    </script>
   </div>
-
-  <script>
-  var link = document.querySelector('link[rel=import]');
-  var content = link.import.querySelector('#footer');
-  document.body.appendChild(document.importNode(content, true));
-  </script>
-
 </body>

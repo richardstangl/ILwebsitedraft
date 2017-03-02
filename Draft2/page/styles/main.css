@@ -135,7 +135,7 @@ img {
 }
 
 .contacttext {
-  text-indent: 10%;
+  /*text-indent: 10%;*/
 }
 
 html {
@@ -206,4 +206,8 @@ body {
 .verticalLine {
   border-left: thick solid #ff3333;
   padding-left: 20px;
+}
+
+
+
 }

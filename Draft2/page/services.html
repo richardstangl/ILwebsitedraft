@@ -11,17 +11,17 @@
   <link rel="import" href="/templates/elements.html">
 
 </head>
-<body>
+<body background="globelogo50.jpg" style="background-repeat: no-repeat;">
 
   <script>
-      var link = document.querySelector('link[rel=import]');
-      var content = link.import.querySelector('#navbar');
-      document.body.appendChild(document.importNode(content, true));
-    </script>
+  var link = document.querySelector('link[rel=import]');
+  var content = link.import.querySelector('#navbar');
+  document.body.appendChild(document.importNode(content, true));
+  </script>
 
-    <script>
-    var link = document.querySelector('link[rel=import]');
-    var content = link.import.querySelector('#footer');
-    document.body.appendChild(document.importNode(content, true));
-    </script>
+  <script>
+  var link = document.querySelector('link[rel=import]');
+  var content = link.import.querySelector('#footer');
+  document.body.appendChild(document.importNode(content, true));
+  </script>
 </body>
