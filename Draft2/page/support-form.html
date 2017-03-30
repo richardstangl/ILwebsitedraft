@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<head>
+  <title>Info-Link Search Results</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="scripts/main.js"></script>
+  <link rel="import" href="/templates/elements.html">
+  <link rel="stylesheet" href="tipuesearch/css/tipuesearch.css">
+
+</head>
+<!-- <body background="globelogo50.jpg" style="background-repeat: no-repeat;"> -->
+<body>
+  <script>
+  var link = document.querySelector('link[rel=import]');
+  var content = link.import.querySelector('#navbar');
+  document.body.appendChild(document.importNode(content, true));
+  </script>
+
+  <script>
+  var link = document.querySelector('link[rel=import]');
+  var content = link.import.querySelector('#footer');
+  document.body.appendChild(document.importNode(content, true));
+  </script>
+
+<div id="support-form">
+
+  <tr><td valign="top" id="content">
+
+  <BR>
+  <P CLASS=subpage_header>Support Request Form</P>
+
+
+    <P>If you are having a problem with your service, you can use this form to
+    report the problem and request assistance from our experienced staff.  Please
+    provide as much information as possible so that we can resolve your problems
+    quickly.  We are committed to providing quality service to our customers!
+    </P>
+
+
+  <FORM NAME=dataform METHOD=POST>
+
+  <P><B>Your Name</B><BR>
+  <INPUT NAME=name TYPE=TEXT SIZE=70 VALUE="">
+  </P>
+
+  <P>Please provide at least one way to contact you.  You will be contacted via one
+  of the methods you provide during our regular office hours.  Please be sure to provide
+  accurate information here, since we can't help you if we can't contact you!</P>
+
+  <P><B>Your E-mail Address</B><BR>
+  <INPUT NAME=email TYPE=TEXT SIZE=70 VALUE="">
+  </P>
+
+  <P><B>Phone Number</B><BR>
+  <INPUT NAME=phone TYPE=TEXT SIZE=15 VALUE="">
+  </P>
+
+  <P>Please provide us with either your Info Link Billing ID (displayed on your bill), or with
+  the username of the account which you are experiencing problems with.</P>
+
+  <P><B>Billing ID</B><BR>
+  (This is the last 5 digits of the Statement # displayed on the bills you receive from Info Link)<BR>
+  <INPUT NAME=customer_id TYPE=TEXT SIZE=10 VALUE="">
+  </P>
+
+  <P><B>Username</B><BR>
+  <INPUT NAME=username TYPE=TEXT SIZE=32 MAXLENGTH=32 VALUE="">
+  </P>
+
+  <P>Describe the problem(s) you are experiencing below.</P>
+
+  <P><B>Type of Problem</B><BR>
+  <SELECT NAME=problem_type>
+  <OPTION VALUE="*">&nbsp;&lt; Select an appropriate category &gt; </OPTION>
+  <OPTION VALUE="*0"></OPTION>
+  <OPTION VALUE="_email">E-mail Related:</OPTION>
+  <OPTION VALUE="email_cant_send">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Can't send email</OPTION>
+  <OPTION VALUE="email_cant_receive">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Can't receive email</OPTION>
+  <OPTION VALUE="email_other">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Other e-mail related problem</OPTION>
+  <OPTION VALUE="*1"></OPTION>
+  <OPTION VALUE="_dialup">Dial-up Related:</OPTION>
+  <OPTION VALUE="dialup_cant_connect">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Can't connect</OPTION>
+  <OPTION VALUE="dialup_disconnects">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Frequent disconnects</OPTION>
+  <OPTION VALUE="dialup_cant_browse">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Can't view webpages</OPTION>
+  <OPTION VALUE="dialup_other">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Other dialup related problem</OPTION>
+  <OPTION VALUE="*2"></OPTION>
+  <OPTION VALUE="_wireless">Wireless Related:</OPTION>
+  <OPTION VALUE="wireless_cant_browse">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Can't view webpages</OPTION>
+  <OPTION VALUE="wireless_other">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Other wireless related problem</OPTION>
+  <OPTION VALUE="*3"></OPTION>
+  <OPTION VALUE="_other">Other Services:</OPTION>
+  <OPTION VALUE="other_other">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Problem is with another service not listed here</OPTION>
+  <OPTION VALUE="*4"></OPTION>
+  </SELECT>
+  </P>
+
+  <P><B>Description of Problem</B><BR>
+  (Please describe the problem you are experiencing in as much detail as possible.  The more
+  information you can provide, the more likely the possibility of a swift resolution.)<BR>
+  <TEXTAREA NAME=problem_description COLS=70 ROWS=6></TEXTAREA>
+  </P>
+
+  <p><b>Please type the two words below for authentication.</b><br /></p>
+  <script type="text/javascript" src="http://api.recaptcha.net/challenge?k=6LcyoAAAAAAAAK1m2TYtqP1MO3X1edb7FJA6kmaP"></script>
+
+  	<noscript>
+    		<iframe src="http://api.recaptcha.net/noscript?k=6LcyoAAAAAAAAK1m2TYtqP1MO3X1edb7FJA6kmaP" height="300" width="500" frameborder="0"></iframe><br>
+    		<textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
+    		<input type="hidden" name="recaptcha_response_field" value="manual_challenge">
+  	</noscript><p></p>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <INPUT TYPE=SUBMIT VALUE="Submit Form">
+
+  </FORM>
+  </br>
+  <!-- </td></tr></table> -->
+  </td></tr>
+
+  <tr><td><table border="0" width="100%" cellspacing="0" cellpadding="0"><tr>
+  <td bgcolor="#CCCCCC" align="left"><img src="http://www.info-link.net:80/template/images/bottom_links.gif" usemap="#Bottom_Map" border="0" alt="Navigation Links"></td>
+
+  <td nowrap bgcolor="#CCCCCC" align="right">
+    <p class="copyright">&copy; Copyright 2017 Info Link Inc. &nbsp; </p>
+  </td>
+  </tr></table></td></tr>
+  </table>
+</div>
+</body>
