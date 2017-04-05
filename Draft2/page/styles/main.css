@@ -225,8 +225,171 @@ ul.topnav li.icon {display: none;}
 #support-form {
   display: inline-block;
   padding-left: 10%;
-  
+
   padding-right: 10%;
   max-width: 1000px;
   margin:0 auto;
 }
+
+.support-page {
+  padding-left: 10%;
+  padding-right: 10%;
+
+}
+.support-form {
+}
+
+.support-text {
+  margin-right: 20%;
+}
+
+.support-text h3:after {
+  content:"";
+  display: inline-block;
+  /*height: 0.2em;*/
+  /*vertical-align: bottom;*/
+  width: 80%;
+  margin-right: -10%;
+  margin-left: 10px;
+  border-top: 5px solid #ff3333;
+  color: #ff3333;
+}
+
+@media screen and (max-width: 800px) {
+.support-form {
+    width:100%;
+  }
+}
+
+}
+.support-form-row .row+.row{margin-top:1rem}
+.support-form-row .row>.col,
+.support-form-row .row>[class^=col-]{padding-top:.75rem;
+  padding-bottom:.75rem;
+  background-color:rgba(86,61,124,.15);
+  border:1px solid rgba(86,61,124,.2)
+}
+
+.support-form-row .flex-items-bottom,
+.support-form-row .flex-items-middle,
+.support-form-row .flex-items-top{min-height:6rem;
+  background-color:rgba(255,0,0,.1)
+}
+
+.support-form-row-flex-cols .row{min-height:10rem;
+  background-color:rgba(255,0,0,.1)
+}
+.bd-highlight{background-color:rgba(86,61,124,.15);
+  border:1px solid rgba(86,61,124,.15)
+}
+.support-form-container{min-width:16rem;
+  max-width:25rem;
+  margin-right:auto;
+  margin-left:auto
+}
+
+.support-form-container-header{height:3rem;
+  margin-bottom:.5rem;
+  background-color:#daeeff;
+  border-radius:.25rem
+}
+
+.support-form-container-sidebar{float:right;
+  width:4rem;
+  height:8rem;
+  background-color:#fae3c4;
+  border-radius:.25rem
+}
+
+.support-form-container-body{height:8rem;
+  margin-right:4.5rem;
+  background-color:#957bbe;
+  border-radius:.25rem
+}
+
+.support-form-container-fluid{max-width:none}
+.support-form{position:relative;
+  padding:1rem;
+  margin:1rem -1rem;
+  border:solid #f7f7f9;
+  border-width:.2rem 0 0
+}
+
+.support-form::after{display:block;
+  content:"";
+  clear:both
+}
+
+@media (min-width:576px){.support-form{padding:1.5rem;
+  margin-right:0;
+  margin-bottom:0;
+  margin-left:0;
+  border-width:.2rem}}
+
+.support-form+.clipboard+.highlight,
+.support-form+.highlight{margin-top:0}
+.support-form+p{margin-top:2rem}
+.support-form .pos-f-t{position:relative;margin:-1rem}*/
+@media (min-width:576px){.support-form .pos-f-t{margin:-1.5rem}}
+.support-form>.form-control+.form-control{margin-top:.5rem}
+.support-form>.alert+.alert,
+.support-form>.nav+.nav,
+.support-form>.navbar+.navbar,
+.support-form>.progress+.btn,
+.support-form>.progress+.progress{margin-top:1rem}
+.support-form>.dropdown-menu:first-child{position:static;display:block}
+.support-form>.form-group:last-child{margin-bottom:0}
+.support-form>.close{float:none}
+.support-form-type .table .type-info{color:#999;vertical-align:middle}
+.support-form-type .table td{padding:1rem 0;border-color:#eee}
+.support-form-type .table tr:first-child td{border-top:0}.support-form-type h1,
+.support-form-type h2,
+.support-form-type h3,
+.support-form-type h4,
+.support-form-type h5,
+.support-form-type h6{margin:0}
+.support-form-bg-classes p{padding:1rem}
+.support-form>img+img{margin-left:.5rem}
+.support-form>.btn-group{margin-top:.25rem;margin-bottom:.25rem}
+.support-form>.btn-toolbar+.btn-toolbar{margin-top:.5rem}
+.support-form-control-sizing input[type=text]+input[type=text],
+.support-form-control-sizing select{margin-top:.5rem}
+.support-form-form .input-group{margin-bottom:.5rem}
+.support-form>textarea.form-control{resize:vertical}
+.support-form>.list-group{max-width:400px}
+.support-form .fixed-top,
+.support-form .sticky-top{position:static;margin:-1rem -1rem 1rem}
+.support-form .fixed-bottom{position:static;margin:1rem -1rem -1rem}
+@media (min-width:576px){.support-form .fixed-top,
+  .support-form
+  .sticky-top{margin:-1.5rem -1.5rem 1rem}
+  .support-form .fixed-bottom{margin:1rem -1.5rem -1.5rem}}
+.support-form .pagination{margin-top:.5rem;margin-bottom:.5rem}
+.support-form-modal{background-color:#fafafa}
+.support-form-modal .modal{position:relative;
+  top:auto;
+  right:auto;
+  bottom:auto;
+  left:auto;
+  z-index:1;
+  display:block}
+.support-form-modal .modal-dialog{left:auto;margin-right:auto;margin-left:auto}
+.support-form-tabs .nav-tabs{margin-bottom:1rem}
+.support-form-tooltips{text-align:center}
+.support-form-tooltips>.btn{margin-top:.25rem;margin-bottom:.25rem}
+.support-form-popover-static{padding-bottom:1.5rem;background-color:#f9f9f9}
+.support-form-popover-static .popover{position:relative;display:block;float:left;width:260px;margin:1.25rem}
+.tooltip-demo a{white-space:nowrap}
+.support-form-tooltip-static .tooltip{position:relative;display:inline-block;margin:10px 20px;
+  opacity:1}
+.scrollspy-example{position:relative;height:200px;margin-top:.5rem;overflow:auto}
+.support-form>.bg-danger:not(.navbar),
+.support-form>.bg-faded:not(.navbar),
+.support-form>.bg-info:not(.navbar),
+.support-form>.bg-inverse:not(.navbar),
+.support-form>.bg-primary:not(.navbar),
+.support-form>.bg-success:not(.navbar),
+.support-form>.bg-warning:not(.navbar){padding:.5rem;
+  margin-top:.5rem;
+  margin-bottom:.5rem}
+.support-form-border-utils
