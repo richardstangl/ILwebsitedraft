@@ -223,24 +223,25 @@ ul.topnav li.icon {display: none;}
 /* Support Request Form Page styles */
 
 #support-form {
-  display: inline-block;
-  padding-left: 10%;
 
-  padding-right: 10%;
-  max-width: 1000px;
-  margin:0 auto;
 }
 
 .support-page {
-  padding-left: 10%;
-  padding-right: 10%;
-
+  width: 700px;
+  margin: 0 auto;
 }
 .support-form {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .support-text {
-  margin-right: 20%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.support-text h3 {
+    overflow: hidden;
 }
 
 .support-text h3:after {
@@ -248,20 +249,24 @@ ul.topnav li.icon {display: none;}
   display: inline-block;
   /*height: 0.2em;*/
   /*vertical-align: bottom;*/
-  width: 80%;
-  margin-right: -10%;
+  width: 100%;
+  margin-right: -100%;
   margin-left: 10px;
   border-top: 5px solid #ff3333;
   color: #ff3333;
 }
 
 @media screen and (max-width: 800px) {
-.support-form {
+.support-page {
     width:100%;
   }
 }
 
+.support-form #required:after {
+  content:" *";
+  color: #ff3333;
 }
+
 .support-form-row .row+.row{margin-top:1rem}
 .support-form-row .row>.col,
 .support-form-row .row>[class^=col-]{padding-top:.75rem;
@@ -320,7 +325,7 @@ ul.topnav li.icon {display: none;}
   clear:both
 }
 
-@media (min-width:576px){.support-form{padding:1.5rem;
+@media (min-width:200px){.support-form{padding:1.5rem;
   margin-right:0;
   margin-bottom:0;
   margin-left:0;
@@ -330,7 +335,7 @@ ul.topnav li.icon {display: none;}
 .support-form+.highlight{margin-top:0}
 .support-form+p{margin-top:2rem}
 .support-form .pos-f-t{position:relative;margin:-1rem}*/
-@media (min-width:576px){.support-form .pos-f-t{margin:-1.5rem}}
+@media (min-width:200px){.support-form .pos-f-t{margin:-1.5rem}}
 .support-form>.form-control+.form-control{margin-top:.5rem}
 .support-form>.alert+.alert,
 .support-form>.nav+.nav,
@@ -360,7 +365,7 @@ ul.topnav li.icon {display: none;}
 .support-form .fixed-top,
 .support-form .sticky-top{position:static;margin:-1rem -1rem 1rem}
 .support-form .fixed-bottom{position:static;margin:1rem -1rem -1rem}
-@media (min-width:576px){.support-form .fixed-top,
+@media (min-width:200px){.support-form .fixed-top,
   .support-form
   .sticky-top{margin:-1.5rem -1.5rem 1rem}
   .support-form .fixed-bottom{margin:1rem -1.5rem -1.5rem}}

@@ -10,7 +10,7 @@
   <script src="scripts/main.js"></script>
   <link rel="import" href="/templates/elements.html">
   <link rel="stylesheet" href="tipuesearch/css/tipuesearch.css">
-
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <!-- <body background="globelogo50.jpg" style="background-repeat: no-repeat;"> -->
 <body>
@@ -25,185 +25,150 @@
   var content = link.import.querySelector('#footer');
   document.body.appendChild(document.importNode(content, true));
   </script>
+
+
+
   <div class="support-page">
     <div class="support-form">
       <div class="support-text">
-        <h3>Support Request Form</h3>
+        <h3><b>Support Request Form</b></h3>
+        <div class="verticalLine">
+          <h5>
+            <p>If you are having a problem with your service, you can use this form to report
+              the problem and request assistance from our experienced staff.
+              <p>Please provide as much
+              information as possible so that we can resolve your problems quickly.
+              <p>We are committed
+              to providing quality service to our customers!</h5>
+            </div>
+          </div>
+          <form>
+            <div class="form-group">
+              <small class="form-text text-muted" style="float:right;"><large id="required"></large>Required</small>
+              <br>
+              <label id="required" for="input-name">Name</label>
+              <input type="name" class="form-control" id="input-name" placeholder="Enter name">
+            </div>
+            <div class="form-group">
+              <label id="required" for="input-email">Email address</label>
+              <input type="email" class="form-control" id="input-email" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your information with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label id="required" for="input-phone">Phone number</label>
+              <input type="phone" class="form-control" id="input-phone" placeholder="Enter phone number">
+            </div>
+            <div class="form-group">
+              <label for="input-billing-id-username">Username or billing ID</label>
+              <input type="billing-id-username" class="form-control" id="input-billing-id-username" placeholder="Enter username or billing ID">
+              <small id="billingusernameHelp" class="form-text text-muted">Billing ID is the last five digits of the statement number on your bill.</small>
+            </div>
 
-        <h5>
-          <p>If you are having a problem with your service, you can use this form to report
-          the problem and request assistance from our experienced staff.
-          Please provide as much
-          information as possible so that we can resolve your problems quickly.
-          We are committed
-          to providing quality service to our customers!</h5>
+            <div class="form-group">
+              <label id="required" for="input-problem-description">What can we help you with?</label>
+              <textarea class="form-control" id="problem-description" rows="3"></textarea>
+            </div>
+            <div class="g-recaptcha" data-sitekey="6Lfu5xsUAAAAAPI4o6fC5cjz1a7JnpKBhT45lZ8c"></div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
         </div>
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-          </div>
-          <div class="form-group">
-            <label for="exampleSelect1">Example select</label>
-            <select class="form-control" id="exampleSelect1">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="exampleSelect2">Example multiple select</label>
-            <select multiple class="form-control" id="exampleSelect2">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="exampleTextarea">Example textarea</label>
-            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputFile">File input</label>
-            <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
-            <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
-          </div>
-          <fieldset class="form-group">
-            <legend>Radio buttons</legend>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                Option one is this and that&mdash;be sure to include why it's great
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-                Option two can be something else and selecting it will deselect option one
-              </label>
-            </div>
-            <div class="form-check disabled">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-                Option three is disabled
-              </label>
-            </div>
-          </fieldset>
-          <div class="form-check">
-            <label class="form-check-label">
-              <input type="checkbox" class="form-check-input">
-              Check me out
-            </label>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
       </div>
-    </div>
-    ======================================================================================
-    <div id="support-form">
+      <!-- ======================================================================================
+      <div id="support-form">
 
-      <tr><td valign="top" id="content">
+        <tr><td valign="top" id="content">
 
-        <BR>
-          <P CLASS=subpage_header>Support Request Form</P>
-
-
-          <P>If you are having a problem with your service, you can use this form to
-            report the problem and request assistance from our experienced staff.  Please
-            provide as much information as possible so that we can resolve your problems
-            quickly.  We are committed to providing quality service to our customers!
-          </P>
+          <BR>
+            <P CLASS=subpage_header>Support Request Form</P>
 
 
-          <FORM NAME=dataform METHOD=POST>
+            <P>If you are having a problem with your service, you can use this form to
+              report the problem and request assistance from our experienced staff.  Please
+              provide as much information as possible so that we can resolve your problems
+              quickly.  We are committed to providing quality service to our customers!
+            </P>
 
-            <P><B>Your Name</B><BR>
-              <INPUT NAME=name TYPE=TEXT SIZE=70 VALUE="">
-              </P>
 
-              <P>Please provide at least one way to contact you.  You will be contacted via one
-                of the methods you provide during our regular office hours.  Please be sure to provide
-                accurate information here, since we can't help you if we can't contact you!</P>
+            <FORM NAME=dataform METHOD=POST>
 
-                <P><B>Your E-mail Address</B><BR>
-                  <INPUT NAME=email TYPE=TEXT SIZE=70 VALUE="">
-                  </P>
+              <P><B>Your Name</B><BR>
+                <INPUT NAME=name TYPE=TEXT SIZE=70 VALUE="">
+                </P>
 
-                  <P><B>Phone Number</B><BR>
-                    <INPUT NAME=phone TYPE=TEXT SIZE=15 VALUE="">
+                <P>Please provide at least one way to contact you.  You will be contacted via one
+                  of the methods you provide during our regular office hours.  Please be sure to provide
+                  accurate information here, since we can't help you if we can't contact you!</P>
+
+                  <P><B>Your E-mail Address</B><BR>
+                    <INPUT NAME=email TYPE=TEXT SIZE=70 VALUE="">
                     </P>
 
-                    <P>Please provide us with either your Info Link Billing ID (displayed on your bill), or with
-                      the username of the account which you are experiencing problems with.</P>
+                    <P><B>Phone Number</B><BR>
+                      <INPUT NAME=phone TYPE=TEXT SIZE=15 VALUE="">
+                      </P>
 
-                      <P><B>Billing ID</B><BR>
-                        (This is the last 5 digits of the Statement # displayed on the bills you receive from Info Link)<BR>
-                          <INPUT NAME=customer_id TYPE=TEXT SIZE=10 VALUE="">
-                          </P>
+                      <P>Please provide us with either your Info Link Billing ID (displayed on your bill), or with
+                        the username of the account which you are experiencing problems with.</P>
 
-                          <P><B>Username</B><BR>
-                            <INPUT NAME=username TYPE=TEXT SIZE=32 MAXLENGTH=32 VALUE="">
+                        <P><B>Billing ID</B><BR>
+                          (This is the last 5 digits of the Statement # displayed on the bills you receive from Info Link)<BR>
+                            <INPUT NAME=customer_id TYPE=TEXT SIZE=10 VALUE="">
                             </P>
 
-                            <P>Describe the problem(s) you are experiencing below.</P>
-
-                            <P><B>Type of Problem</B><BR>
-                              <SELECT NAME=problem_type>
-                                <OPTION VALUE="*">&nbsp;&lt; Select an appropriate category &gt; </OPTION>
-                                <OPTION VALUE="*0"></OPTION>
-                                <OPTION VALUE="_email">E-mail Related:</OPTION>
-                                <OPTION VALUE="email_cant_send">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Can't send email</OPTION>
-                                <OPTION VALUE="email_cant_receive">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Can't receive email</OPTION>
-                                <OPTION VALUE="email_other">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Other e-mail related problem</OPTION>
-                                <OPTION VALUE="*1"></OPTION>
-                                <OPTION VALUE="_dialup">Dial-up Related:</OPTION>
-                                <OPTION VALUE="dialup_cant_connect">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Can't connect</OPTION>
-                                <OPTION VALUE="dialup_disconnects">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Frequent disconnects</OPTION>
-                                <OPTION VALUE="dialup_cant_browse">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Can't view webpages</OPTION>
-                                <OPTION VALUE="dialup_other">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Other dialup related problem</OPTION>
-                                <OPTION VALUE="*2"></OPTION>
-                                <OPTION VALUE="_wireless">Wireless Related:</OPTION>
-                                <OPTION VALUE="wireless_cant_browse">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Can't view webpages</OPTION>
-                                <OPTION VALUE="wireless_other">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Other wireless related problem</OPTION>
-                                <OPTION VALUE="*3"></OPTION>
-                                <OPTION VALUE="_other">Other Services:</OPTION>
-                                <OPTION VALUE="other_other">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Problem is with another service not listed here</OPTION>
-                                <OPTION VALUE="*4"></OPTION>
-                              </SELECT>
-                            </P>
-
-                            <P><B>Description of Problem</B><BR>
-                              (Please describe the problem you are experiencing in as much detail as possible.  The more
-                              information you can provide, the more likely the possibility of a swift resolution.)<BR>
-                                <TEXTAREA NAME=problem_description COLS=70 ROWS=6></TEXTAREA>
+                            <P><B>Username</B><BR>
+                              <INPUT NAME=username TYPE=TEXT SIZE=32 MAXLENGTH=32 VALUE="">
                               </P>
 
-                              <p><b>Please type the two words below for authentication.</b><br /></p>
-                              <script type="text/javascript" src="http://api.recaptcha.net/challenge?k=6LcyoAAAAAAAAK1m2TYtqP1MO3X1edb7FJA6kmaP"></script>
+                              <P>Describe the problem(s) you are experiencing below.</P>
 
-                              <noscript>
-                                <iframe src="http://api.recaptcha.net/noscript?k=6LcyoAAAAAAAAK1m2TYtqP1MO3X1edb7FJA6kmaP" height="300" width="500" frameborder="0"></iframe><br>
-                                <textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
-                                <input type="hidden" name="recaptcha_response_field" value="manual_challenge">
-                              </noscript><p></p>
+                              <P><B>Type of Problem</B><BR>
+                                <SELECT NAME=problem_type>
+                                  <OPTION VALUE="*">&nbsp;&lt; Select an appropriate category &gt; </OPTION>
+                                  <OPTION VALUE="*0"></OPTION>
+                                  <OPTION VALUE="_email">E-mail Related:</OPTION>
+                                  <OPTION VALUE="email_cant_send">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Can't send email</OPTION>
+                                  <OPTION VALUE="email_cant_receive">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Can't receive email</OPTION>
+                                  <OPTION VALUE="email_other">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Other e-mail related problem</OPTION>
+                                  <OPTION VALUE="*1"></OPTION>
+                                  <OPTION VALUE="_dialup">Dial-up Related:</OPTION>
+                                  <OPTION VALUE="dialup_cant_connect">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Can't connect</OPTION>
+                                  <OPTION VALUE="dialup_disconnects">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Frequent disconnects</OPTION>
+                                  <OPTION VALUE="dialup_cant_browse">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Can't view webpages</OPTION>
+                                  <OPTION VALUE="dialup_other">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Other dialup related problem</OPTION>
+                                  <OPTION VALUE="*2"></OPTION>
+                                  <OPTION VALUE="_wireless">Wireless Related:</OPTION>
+                                  <OPTION VALUE="wireless_cant_browse">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Can't view webpages</OPTION>
+                                  <OPTION VALUE="wireless_other">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Other wireless related problem</OPTION>
+                                  <OPTION VALUE="*3"></OPTION>
+                                  <OPTION VALUE="_other">Other Services:</OPTION>
+                                  <OPTION VALUE="other_other">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Problem is with another service not listed here</OPTION>
+                                  <OPTION VALUE="*4"></OPTION>
+                                </SELECT>
+                              </P>
 
-                              &nbsp;&nbsp;&nbsp;&nbsp;
-                              <INPUT TYPE=SUBMIT VALUE="Submit Form">
+                              <P><B>Description of Problem</B><BR>
+                                (Please describe the problem you are experiencing in as much detail as possible.  The more
+                                information you can provide, the more likely the possibility of a swift resolution.)<BR>
+                                  <TEXTAREA NAME=problem_description COLS=70 ROWS=6></TEXTAREA>
+                                </P>
 
-                              </FORM>
-                            </br>
-                            <!-- </td></tr></table> -->
-                          </td></tr>
+                                <p><b>Please type the two words below for authentication.</b><br /></p>
+                                <script type="text/javascript" src="http://api.recaptcha.net/challenge?k=6LcyoAAAAAAAAK1m2TYtqP1MO3X1edb7FJA6kmaP"></script>
+
+                                <noscript>
+                                  <iframe src="http://api.recaptcha.net/noscript?k=6LcyoAAAAAAAAK1m2TYtqP1MO3X1edb7FJA6kmaP" height="300" width="500" frameborder="0"></iframe><br>
+                                  <textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
+                                  <input type="hidden" name="recaptcha_response_field" value="manual_challenge">
+                                </noscript><p></p>
+
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <INPUT TYPE=SUBMIT VALUE="Submit Form">
+
+                                </FORM>
+                              </br>
+                              <!-- </td></tr></table> -->
+                            <!-- </td></tr>
 
 
-                        </div>
-                      </body>
+                          </div>
+                        </body> --> -->
